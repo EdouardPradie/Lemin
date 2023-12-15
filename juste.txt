@@ -1,0 +1,28 @@
+34
+##start                       [4->1->3->5]
+1 23 3                         |  |  |  |
+2 16 7                         |  v  v  v
+3 16 3                         v  x  y
+#comment                       2->7->0->3
+4 16 5                        
+5 9 3                         1 == Connexion avec 1 == Coordonnée (x, y)     >> 1->2
+                              |                                                  ->3
+6 1 0                         v                  sqrt((x1 - x2)² + (y1 - y2)²) > sqrt((x1 - x3)² + (y1 - y3)²)
+7 4 8                         1 -> 2 == 7, 1, 5, 4 += Si node deja dans la liste -> mettre l'ordre
+                              |
+                              v
+##end                         1 -> 3
+0 9 5                         |
+0-4                           v
+0-6                           1 -> 2 -> 4
+1-3                           |
+4-3                           v
+5-2                           1 -> 2 -> 7
+3-5
+#another comment
+4-2
+2-1
+7-6
+7-2
+7-4
+6-5
